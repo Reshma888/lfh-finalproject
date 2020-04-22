@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S6CSENOTES</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidebar {
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        height: 100%;
+        position: fixed;
+      }
+
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 300px;
+        padding: 1px 16px;
+        height: 400px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+
+      a {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+    <style>
+      .btn-group button {
+        background-color: #2a2a2a;
+        border: 1px solid #2b2b2b;
+        color: white;
+        padding: 10px 24px;
+        cursor: pointer;
+        width: 50%;
+        display: block;
+      }
+
+      .btn-group button:not(:last-child) {
+        border-bottom: none;
+      }
+
+      .btn-group button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+    <style>
+      footer {
+        color: white;
+        height: 30px;
+        font-size: medium;
+        text-align: center;
+        display: block;
+        background-color: black;
+        padding-top: 20px;
+        margin-top: 170px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="index.html">HOME</a>
+      <a href="syllabus.html">SYLLABUS</a>
+      <a href="cn.html">Computer Networks</a>
+      <a href="cd.html">Compiler Design</a>
+      <a href="daa.html">Design and analysis of Algorithms</a>
+      <a href="se.html">Software Engineering</a>
+      <a href="mc.html">Mobile Computing</a>
+      <a href="web.html">Web Technologies</a>
+      <a href="pom.html">Principles of Management</a>
+    </div>
+
+    <div class="content">
+      <br /><br />
+      <h1>SOFTWARE ENGINEERING NOTES - MODULE WISE</h1>
+      <br />
+      <div class="btn-group">
+        <a href="pdf/se1.pdf"><button>Module 1</button></a>
+        <a href="pdf/se2.pdf"><button>Module 2</button></a>
+        <a href="pdf/se3.pdf"><button>Module 3</button></a>
+        <a href="pdf/se4.pdf"><button>Module 4</button></a>
+        <a href="pdf/se5.pdf"><button>Module 5</button></a>
+        <a href="pdf/se6.pdf"><button>Module 6</button></a>
+      </div>
+    </div>
+  </body>
+  <footer><small>Copyright © 2020. All rights reserved.</small></footer>
+</html>
